@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librería Literaria</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Librería Literaria</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section id="productos">
+            <h2>Libros en Venta</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="img/el-principito.jpg" alt="El Principito" />
+                    <h3>El Principito</h3>
+                    <p>$15000</p>
+                </div>
+                <div class="card">
+                    <img src="img/1984.jpg" alt="1984" />
+                    <h3>1984</h3>
+                    <p>$20000</p>
+                </div>
+                <div class="card">
+                    <img src="img/don-quijote.jpg" alt="Don Quijote de la Mancha" />
+                    <h3>Don Quijote de la Mancha</h3>
+                    <p>$25000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reseñas">
+            <h2>Reseñas</h2>
+            <div class="grid-reseñas">
+                <div>
+                    <p>📖 “El Principito me hizo reflexionar sobre lo esencial.”</p>
+                </div>
+                <div>
+                    <p>👁️ “1984 es una advertencia poderosa sobre el control.”</p>
+                </div>
+                <div>
+                    <p>🛡️ “Don Quijote es una aventura inolvidable.”</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/xdkwgjry" method="POST">
+                <label>Nombre:<input type="text" name="nombre" required /></label>
+                <label>Email:<input type="email" name="email" required /></label>
+                <label>Mensaje:<textarea name="mensaje" required></textarea></label>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Librería Literaria. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
